@@ -109,9 +109,7 @@ def MirrorControls():
 
     #set translate x,y,z to 0
     for ctrl in unparented_ctrls:
-        cmds.setAttr(ctrl + ".translateX", 0)
-        cmds.setAttr(ctrl + ".translateY", 0)
-        cmds.setAttr(ctrl + ".translateZ", 0)
+        cmds.setAttr(ctrl + ".translate", 0,0,0)
         #freeze all
         cmds.makeIdentity(ctrl, apply=True, translate=True, rotate=True, scale=True, normal=True)
 
