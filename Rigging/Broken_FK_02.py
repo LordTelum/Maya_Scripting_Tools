@@ -1,3 +1,12 @@
+'''
+To use this tool select the control you want to be the parent, then select the control you want to be the child.
+
+For example, you would select Spine_01_Ctrl then Spine_01_Ctrl you can then run the script.
+
+The script will create the proper parent and scale constraints for those controls on the Ctrl_Grp of the child.
+
+It will also create a few custom attributes as well.
+'''
 import maya.cmds as cmds
 
 sels = cmds.ls(sl=True)

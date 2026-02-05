@@ -1,3 +1,9 @@
+'''
+This will create the controls and their groups at the position of selected joints.
+
+To use this script, select the joints you want to make controls for and run the command.
+'''
+
 import maya.cmds as cmds
 
 def create_controls_for_joints():
